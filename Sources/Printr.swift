@@ -64,7 +64,7 @@ public struct Printr {
     private let errorFormatting: Formatting
     private let textFormatting: Formatting
     
-    init(config: OutputFormatConfiguration? = nil) {
+    public init(config: OutputFormatConfiguration? = nil) {
         infoFormatting = config?.infoFormatting ?? [Background.Blue, Color.White]
         successFormatting = config?.successFormatting ?? [Background.Green, Color.White]
         warningFormatting = config?.warningFormatting ?? [Background.Yellow, Color.White]
@@ -75,13 +75,13 @@ public struct Printr {
 
 extension Printr {
     
-    func alert(type: AlertType) {
+    public func alert(type: AlertType) {
         let formatting = formattingForAlert(type)
         
         print(formatOutput(type.string, formats: formatting, withPadding: true))
     }
     
-    func text(string: String, formats: Formatting? = nil, newLine: Bool = true) {
+    public func text(string: String, formats: Formatting? = nil, newLine: Bool = true) {
         let formatting = formats ?? textFormatting
         let output = formatOutput(string, formats: formatting)
         
@@ -93,7 +93,7 @@ extension Printr {
         }
     }
     
-    func line() {
+    public func line() {
         print("")
     }
 }
