@@ -50,7 +50,7 @@ You can learn how from this series [How to Contribute to an Open Source Project 
 ###Author
 
 Matthew Clarkson
-/Users/Matthew/Sites/swift/vapor-installer/Sources/Output.swift
+
 [@matt_clarkson](https://twitter.com/matt_clarkson)
 
 [Blog](https://mpclarkson.github.io)
