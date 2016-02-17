@@ -16,9 +16,7 @@ let formats = [Text.Bold, Color.Red]
 print.text("some formatted text", formats: formats)
 //prints the string in bold, red
 
-
 ```
-
 
 ###Instructions
 
@@ -33,9 +31,7 @@ let package = Package(
     ]
 )
 
-
 ```
-
 
 ###Contributions
 
